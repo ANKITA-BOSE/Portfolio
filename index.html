@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cd67313a5d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+        <nav>
+            <img src="images/logo1.jpg" class="logo">
+            <ul id="sidemenu">       
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <!-- <li><a href="#">Portfolio</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, <br> I'm <span>Ankita Bose</span> <br> From India</h1>
+        </div>
+
+        </div>
+    </div>
+    <!-- ------------------about----------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/photo.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am passionate about technology and eager to begin my journey in the tech industry. As a fresher, I am enthusiastic about applying my knowledge and skills in real-world projects, particularly in software development, app design, and problem-solving. I am always looking for opportunities to learn and grow, while contributing to innovative solutions.</p>
+                
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('activities')">Activities</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span><br>Basic knowledge in Python.</li>
+                            <li><span>DBMS & SQL</span><br>Basic knowledge in Database Management System & Structured Query Language.</li>
+                            <li><span>HTML, CSS & JavaScript</span><br>Building a Personal Portfolio Website.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>MCA from IEM Kolkata.</li>
+                            <li><span>2022</span><br>B.Sc. in Computer Science from RNLKWC Midnapore.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="activities">
+                        <ul>
+                            <li><span>Coursera</span><br>Course on "IBM Data Science".</li>
+                            <li><span>LinkedIn Learning</span><br>Course on "Machine Learning with Python: Foundations".</li>
+                        </ul>
+                    </div>
+                </div>                
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------Projects----------------- -->
+     <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Pneumonia Detection Using CNN</h2>
+                    <p>I worked on a project to develop an automated system that detects pneumonia from chest X-ray images using
+                        deep learning models. This system was built as part of my Master's program and used CNNs (Convolutional
+                        Neural Networks) to classify X-rays as either showing signs of pneumonia or normal.<br>
+                        <br><b>My role involved:</b> Team Member.<br>
+                        <br><b>Data Preprocessing:</b> Cleaning and improving image quality by cropping unnecessary parts, reducing noise, and
+                        focusing on the lung regions using K-means clustering.<br>
+                        <br><b>Model Development:</b> I helped design and train the CNN model to accurately detect pneumonia from X-ray
+                        images. This included using deep learning methods and testing the model for accuracy.<br>
+                        <br><b>Image Analysis:</b> I applied a unique trapezium method to better identify and measure the infected areas in the
+                        lungs.<br>
+                        <br><b>Outcome:</b> The model achieved 81% accuracy, significantly improving detection performance over earlier
+                        methods.<br>
+                        <br><b>Tools & Technologies Used:</b> Python, TensorFlow, Keras, Jupyter Notebook, Kaggle datasets, Visual Studio Code.<br>
+                        <br><b>Skills Acquired:</b> Machine Learning, Image Processing, CNN Model Training, Data Analysis, Medical Imaging.<br>
+                        <br>This project gave me practical experience in applying AI technologies to solve real-world healthcare problems.<br>
+                        <br><b>Colab Link:</b>
+                        https://colab.research.google.com/drive/1HgdfKNaDyrSO_wc1YOSfDxSEEgnMC-wl?usp=sharing <br>
+                        <br><b>Kaggle Link:</b>
+                        https://www.kaggle.com/code/ankitabose1/lungs-segmentation/edit/run/198803749 <br></p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Personal Portfolio Website Using HTML, CSS, JS</h2>
+                    <p><b>Project Overview:</b> The website acts as a personal portfolio, showcasing an individual's skills and completed projects, similar to a digital resume.<br>
+
+                        <br><b>Tools Used:</b> Built using Visual Studio Code, with HTML for structuring content, CSS for designing the layout, and JavaScript for interactive elements.<br>
+                        
+                        <br><b>Structure:</b> The website consists of the following sections:<br>
+                        
+                        <br><b>Header</b> with navigation links (Home, About, Projects, Portfolio, and Contact).<br>
+                        <br><b>About:</b> Brief bio and background details.<br>
+                        <br><b>Projects:</b> Displays a list of notable projects with descriptions and links.<br>
+                        <br><b>Portfolio:</b> Highlights a gallery of work, showcasing skills and creative projects.<br>
+                        <br><b>Contact:</b> Contains a contact form, email address, and social media links for communication.<br>
+                        <br><b>Responsive Design:</b> The website employs CSS media queries for an optimized layout across different devices (mobile, tablet, and desktop).<br>
+                        
+                        <br><b>Interactivity:</b> JavaScript enables dynamic effects like smooth scrolling, interactive navigation, and form validation.<br>
+                        
+                        <br><b>Animations:</b> CSS transitions and animations are used to create engaging hover effects and smooth page transitions.<br>
+                        
+                        <br><b>Deployment:</b> The website can be easily hosted on platforms such as GitHub Pages for online visibility.<br>
+                        
+                        <br><b>Learning Outcomes:</b> The project enhances proficiency in front-end development, focusing on responsive design, smooth user interactions, and clean, maintainable code.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- ------------------Contact----------------- -->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> ankitabose640@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 6296840366</p>
+                    <div class="social-icons">
+                        <a href="http://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/AnkitaBoseCV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2024 Ankita Bose | Made with care <i class="fa-solid fa-heart"></i></p>
+        </div>
+      </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzex_nGgX-6CJcGiQAS_qRYpxQq7Hq0-TP3zCgz77WzhlTILGD5qXTjRx_f5tYQt8CS/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
