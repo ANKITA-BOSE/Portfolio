@@ -43,25 +43,27 @@
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
-                        <p class="tab-links" onclick="opentab('activities')">Activities</p>
+                        <p class="tab-links" onclick="opentab('activities')">Certificate</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Python</span><br>Basic knowledge in Python.</li>
-                            <li><span>DBMS & SQL</span><br>Basic knowledge in Database Management System & Structured Query Language.</li>
-                            <li><span>HTML, CSS & JavaScript</span><br>Building a Personal Portfolio Website.</li>
+                            <li><span>JAVA</span><br>Good knowledge on Core JAVA.</li>
+                            <li><span>SQL</span><br>Good knowledge on Structured Query Language.</li>
+                            <li><span>HTML, CSS & JAVASCRIPT</span><br>Good knowledge on HTML, CSS and JavaScript</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
                             <li><span>2024</span><br>MCA from IEM Kolkata.</li>
                             <li><span>2022</span><br>B.Sc. in Computer Science from RNLKWC Midnapore.</li>
+                            <li><span>2019</span><br>Higher Secondary, From VVGHS Midnapore</li>
+                            <li><span>2017</span><br>Secondary, From VVGHS Midnapore</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="activities">
                         <ul>
-                            <li><span>Coursera</span><br>Course on "IBM Data Science".</li>
-                            <li><span>LinkedIn Learning</span><br>Course on "Machine Learning with Python: Foundations".</li>
+                            <li><span>Java Full Stack Development</span><br>I'm pursuing Java Full Stack Development training in Jspiders Kolkata.</li>
+<!--                             <li><span>LinkedIn Learning</span><br>Course on "Machine Learning with Python: Foundations".</li> -->
                         </ul>
                     </div>
                 </div>                
@@ -155,9 +157,9 @@
             </div>
         </div>
         <div class="copyright">
-            <p>Copyright &copy; 2024 Ankita Bose | Made with care <i class="fa-solid fa-heart"></i></p>
+        <p>Copyright &copy; <span id="year"></span> Ankita Bose | Made with care <i class="fa-solid fa-heart"></i></p>
         </div>
-      </div>
+     </div>
 
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
@@ -201,5 +203,11 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
+    <script>
+    // Auto-update year
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
+
